@@ -1,0 +1,14 @@
+{
+  "name": "local-device-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R. Stephen Guerra",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "address": "^1.0.1"
+  }
+}
