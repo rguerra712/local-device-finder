@@ -21,7 +21,9 @@ var onIpNotFound = function(ip) {
   console.log('IP Not Found: ' + ip);
 };
 
-finder.scan(isCorrectIp, '11-13', onIpFound, onIpNotFound);
+finder.scan(isCorrectIp, '11-13')
+  .then(onIpFound)
+  .catch(onIpNotFound);
 
 // Assuming my IP is 10.0.0.12, the below should output:
 // IP Not Found: 10.0.0.11
